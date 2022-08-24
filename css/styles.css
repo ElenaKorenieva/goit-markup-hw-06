@@ -764,6 +764,7 @@ body {
     color: var(--primary-text-color);
 }
 
+/* Add wrapper to input and svg in case to make position of icon correct */
 .input-wrapper {
     display: flex;
     flex-direction: column;
