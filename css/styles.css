@@ -594,15 +594,13 @@ body {
     color: var(--primary-white-color);
 }
 
-.subscribe-wrapper {
-    display: flex;
-    position: relative;
+/* .subscribe-wrapper {
     min-width: 570px;
-}
+} */
 
 .subscribe__form {
+    display: flex;
     position: relative;
-    margin-right: 12px;
 }
 
 .subscribe-input {
@@ -636,6 +634,8 @@ body {
 
 
 .subscribe_btn {
+    display: block;
+    margin-left: 12px;
     min-width: 200px;
     text-align: left;
 }
@@ -688,7 +688,6 @@ body {
     min-width: 528px;
     min-height: 581px;
     padding: 40px;
-    
     background-color: var(--primary-white-color);
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--timing-function);
@@ -706,13 +705,15 @@ body {
     background-color: var(--primary-white-color);
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transform: background-color 250ms var(--timing-function);
+    transform: background-color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
 
 }
 
 .backdrop_btn:hover,
 .backdrop_btn:focus {
     background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .backdrop__form {
@@ -790,7 +791,10 @@ body {
 }
 
 .submit_btn {
+    display: block;
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     color: var(--primary-white-color);
     min-width: 200px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
