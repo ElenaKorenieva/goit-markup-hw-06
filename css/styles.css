@@ -764,6 +764,12 @@ body {
     color: var(--primary-text-color);
 }
 
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
 .form-input {
     display: inline-block;
     height: 40px;
@@ -773,6 +779,14 @@ body {
     border-radius: 4px;
     transform: fill 250ms var(--timing-function);
 }
+
+.form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+
 
 .form-input:hover,
 .form-input:focus,
@@ -817,16 +831,9 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.form-icon {
-    position: absolute;
-    top: 55%;
-    left: 12px;
-}
-
 .checkbox-field {
     display: flex;
     justify-content: center;
-    padding: 0 5px;
 }
 
 .checkbox {
