@@ -523,6 +523,10 @@ body {
     margin-bottom: 9px;
 }
 
+.footer__item {
+    transition: color 250ms var(--timing-function);
+}
+
 .footer__item:hover,
 .footer__item:focus {
     color: var(--accent-color);
@@ -536,6 +540,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+    transition: color 250ms var(--timing-function);
 }
 
 .footer__link:hover,
@@ -571,7 +576,7 @@ body {
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    transform: background-color 250ms var(--timing-function);
+    transition: background-color 250ms var(--timing-function);
 }
 
 .join-us__link:hover,
@@ -608,36 +613,33 @@ body {
     width: 358px;
     height: 50px;
     margin: 0;
-    padding-left: 42px; 
+    padding-left: 16px; 
     background-color: transparent;
-    color: var(--primary-white-color);
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     /* transform: fill 250ms var(--timing-function); */
 }
 
-.subscribe-label {
-    position: absolute;
-    top: 33%;
-    left: 16px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.subscribe-input:focus + .subscribe-label {
-    transform: translateY(200%);
-}
-
-
 .subscribe_btn {
     display: block;
     margin-left: 12px;
-    min-width: 200px;
+    width: 200px;
+    height: 50px;
     text-align: left;
+    transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function);
+}
+
+.subscribe_btn:hover,
+.subscribe_btn:focus {
+    background-color: var(--background-grey-color);
+    color: var(--title-text-color);
 }
 
 .subscribe_btn-icon {
@@ -646,7 +648,7 @@ body {
     top: 25%;
     right: 5%;
     fill: var(--primary-white-color);
-    transform: fill 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function);
 }
 
 .subscribe_btn:hover + .subscribe_btn-icon,
@@ -690,7 +692,6 @@ body {
     padding: 40px;
     background-color: var(--primary-white-color);
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms var(--timing-function);
 }
 
 .backdrop__btn {
@@ -705,7 +706,7 @@ body {
     background-color: var(--primary-white-color);
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transform: background-color 250ms var(--timing-function),
+    transition: background-color 250ms var(--timing-function),
     border-color 250ms var(--timing-function);
 
 }
@@ -717,7 +718,7 @@ body {
 }
 
 .backdrop__icon {
-    transform: fill 250ms var(--timing-function)
+    transition;: fill 250ms var(--timing-function)
 }
 
 .backdrop__btn:hover .backdrop__icon,
@@ -747,7 +748,7 @@ body {
     flex-direction: column;
     position: relative;
     margin-bottom: 10px;
-    transform: fill 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function);
 }
 
 .with-margin {
@@ -778,7 +779,7 @@ body {
     padding-left: 42px; 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transform: fill 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function);
 }
 
 .form-icon {
@@ -809,17 +810,14 @@ body {
     height: 120px;
     resize: none;
     padding: 12px 16px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-}
-
-.form-textarea::placeholder {
-    font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.67;
     letter-spacing: 0.01em;
     color:  rgba(117, 117, 117, 0.5);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: outline 250ms var(--timing-function);
 }
 
 .submit_btn {
@@ -847,7 +845,7 @@ body {
 .checkbox-label::before {
     display: inline-block;
     position: relative;
-    top: 1.5px;
+    top: 1.8px;
     content: "";
     width: 16px;
     height: 15px;
@@ -861,6 +859,7 @@ body {
     border: none;
     background-image: url("../images/icon-check.svg");
     background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -900,7 +899,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
-    transform: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
+    transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
 }
 
 .button.secondary-btn:hover,
