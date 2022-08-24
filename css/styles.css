@@ -693,7 +693,7 @@ body {
     transition: transform 250ms var(--timing-function);
 }
 
-.backdrop_btn {
+.backdrop__btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -710,11 +710,20 @@ body {
 
 }
 
-.backdrop_btn:hover,
-.backdrop_btn:focus {
+.backdrop__btn:hover,
+.backdrop__btn:focus {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
 }
+
+.backdrop__icon {
+    transform: fill 250ms var(--timing-function)
+}
+
+.backdrop__btn:hover .backdrop__icon,
+.backdrop__btn:focus .backdrop__icon {
+    fill: var(--primary-white-color);
+} 
 
 .backdrop__form {
     width: 448px;
