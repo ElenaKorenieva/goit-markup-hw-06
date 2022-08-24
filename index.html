@@ -882,7 +882,7 @@
                             ></use>
                         </svg>
                     </div>
-                    <div class="form-field">
+                    <div class="form-field with-margin">
                         <label for="comment" class="form-label">Коментар</label>
                         <textarea
                             name="comment"
@@ -891,20 +891,24 @@
                             placeholder="Введіть текст"
                         ></textarea>
                     </div>
-                    <label for="checkbox" class="checkbox-label"
-                        ><input
+
+                    <div class="checkbox-field">
+                        <input
                             type="checkbox"
                             id="checkbox"
                             name="checkbox"
                             class="checkbox"
                         />
-                        <span class="checkbox-icon"></span>
-                        Погоджуюся з розсилкою та приймаю <a
-                            href="#"
-                            class="checkbox-link"
-                            >Умови договору</a
-                        ></label
-                    >
+                        <label for="checkbox" class="checkbox-label" is-hidden
+                            >Погоджуюся з розсилкою та приймаю<a
+                                href="#"
+                                class="checkbox-link"
+                                >&#32; Умови договору</a
+                            ></label
+                        >
+                    </div>
+
+                    <!-- <span class="checkbox-icon"></span> -->
                     <button type="submit" class="button submit_btn">
                         Відправити
                     </button>
