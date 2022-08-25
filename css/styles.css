@@ -718,7 +718,7 @@ body {
 }
 
 .backdrop__icon {
-    transition;: fill 250ms var(--timing-function)
+    transition: fill 250ms var(--timing-function)
 }
 
 .backdrop__btn:hover .backdrop__icon,
