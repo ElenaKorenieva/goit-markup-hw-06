@@ -779,7 +779,7 @@ body {
     padding-left: 42px; 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: fill 250ms var(--timing-function);
+    transition: border 250ms var(--timing-function);
 }
 
 .form-icon {
@@ -787,6 +787,7 @@ body {
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
+    transition: fill 250ms var(--timing-function);
 }
 
 
@@ -794,7 +795,8 @@ body {
 .form-input:focus,
 .form-textarea:hover,
 .form-textarea:focus {
-    outline: 1px solid #2196F3;
+    outline: none;
+    border: 1px solid #2196F3;
 }
 
 .form-input:hover ~ .form-icon {
@@ -817,7 +819,7 @@ body {
     color:  rgba(117, 117, 117, 0.5);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: outline 250ms var(--timing-function);
+    transition: border 250ms var(--timing-function);
 }
 
 .submit_btn {
